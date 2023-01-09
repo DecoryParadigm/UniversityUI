@@ -1,0 +1,90 @@
+#intro-container{ 
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    #written-intro{
+        flex: 0.7;
+        background-image: url('../../assets/images/ellipse.svg');
+        background-repeat: no-repeat;
+        padding-left: 5%;
+        margin-top: 100px;
+        padding-top: 40px;
+        margin-left: 0%;
+        margin-right: 10%;
+       
+        #intro-name{ 
+            font-size: 2.1em;
+        }
+        #intro-txt{ 
+            font-size: 1.3em;
+        }
+    }
+    #video-intro{
+        flex:1;
+        display: flex;
+        justify-content: center;
+        padding-top: 100px;
+    }
+@media(min-width: 600px){
+    flex-direction: row;
+    #written-intro{
+        margin-left: 7%;
+    }
+
+}
+
+}
+
+#separator-holder{
+    display: flex;
+    justify-content: center;
+    #separator{
+        width: 80%;
+        margin: 5% 0px 5% 0px;
+    }
+}
+
+.courses-title-wrapper{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.card-holder{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    #card-container{ 
+        width: 90%;
+        height: auto;
+        margin-bottom: 10%;
+     
+        #ls_container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            ul{ 
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                flex-wrap: wrap;
+                li{
+                    margin-right: 30px;
+                    margin-top: 30px;
+                    list-style-type: none;
+                }
+            }
+        }
+
+    }
+
+}
+
+@media(max-width: 1022px){
+.card-holder #card-container #ls_container ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+}
